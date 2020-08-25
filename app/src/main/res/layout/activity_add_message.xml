@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddMessage">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+    <EditText
+        android:id="@+id/edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_message"
+        android:inputType="textCapSentences"
+        android:maxLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.super_rabbit.wheel_picker.WheelPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:min="1"
+        app:max="100"
+        app:selectedTextColor="@color/colorAccent"
+        app:wrapSelectorWheel="true" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"/>
+
+
+</LinearLayout>

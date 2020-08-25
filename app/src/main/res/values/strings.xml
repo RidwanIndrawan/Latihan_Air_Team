@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Latihan Air Team</string>
+    <string name="message">Keep this message as secret</string>
+    <string name="priority">0</string>
+    <string name="view">View All Secret Messages</string>
+    <string name="hint_message">Message</string>
+    <string name="submit">Submit</string>
+    <string name="ubah">Change</string>
+    <string name="hapus">Delete</string>
+</resources>
